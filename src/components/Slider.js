@@ -73,10 +73,10 @@ const Button = styled.button `
     cursor: pointer;
 `
 const Image3 =styled.img`
-    height: 50.8%;
+    height: 52.9%;
 `
 const Image4 = styled.img`
-    height: 50.8%
+    height: 47.1%
 `
 
 function Slider() {
