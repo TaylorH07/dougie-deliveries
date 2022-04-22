@@ -2,7 +2,7 @@ const { AuthenticationError } = require('apollo-server-express');
 const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
 
-const stripe = require('stripe')(//enter sk key)
+const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
 const resolvers = {
     Query: {
@@ -39,7 +39,7 @@ const resolvers = {
                 return user;
             }
 
-            throw new AuthenticationError('Not logged in');
+            throw new AuthenticationError('User is not logged in');
         },
         order: async (parent, { _id }, context) => {
             if (context.user) {
@@ -51,7 +51,7 @@ const resolvers = {
                 return user.orders.id(_id);
             }
 
-            throw new AuthenticationError('Not logged in');
+            throw new AuthenticationError('User is not logged in');
         },
         checkout: async (parent, args, context) => {
             const url = new URL(context.headers.referer).origin;
@@ -107,14 +107,14 @@ const resolvers = {
                 return order;
             }
 
-            throw new AuthenticationError('Not logged in');
+            throw new AuthenticationError('User is not logged in');
         },
         updateUser: async (parent, args, context) => {
             if (context.user) {
                 return await User.findByIdAndUpdate(context.user._id, args, { new: true });
             }
 
-            throw new AuthenticationError('Not logged in');
+            throw new AuthenticationError('User is not logged in');
         },
         updateProduct: async (parent, { _id, quantity }) => {
             const decrement = Math.abs(quantity) * -1;
@@ -125,13 +125,13 @@ const resolvers = {
             const user = await User.findOne({ email });
 
             if (!user) {
-                throw new AuthenticationError('Incorrect credentials');
+                throw new AuthenticationError('Credentials entered are incorrect');
             }
 
             const correctPw = await user.isCorrectPassword(password);
 
             if (!correctPw) {
-                throw new AuthenticationError('Incorrect credentials');
+                throw new AuthenticationError('Credentials entered are incorrect');
             }
 
             const token = signToken(user);
