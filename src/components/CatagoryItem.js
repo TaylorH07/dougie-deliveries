@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Container = styled.div`
     flex: 1;
     margin: 6px;
-    height: 70vh;
+    height: 35.7vh;
     position: relative;
 `
 const Image = styled.img`
@@ -18,7 +18,7 @@ position: absolute;
 top: 0;
 left: 0;
 width: 100%;
-height: 14.3%;
+height: 26.3%;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -28,7 +28,7 @@ justify-content: center;
 `
 const Title = styled.h1`
     color: black;
-    font-weight: bold;
+    font-weight: 900;
     margin-bottom: 20px;
 `
 const Button = styled.button`

@@ -15,17 +15,11 @@ const Container = styled.div`
   
   
 `
-const Circle = styled.div `
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  position: absolute;
-`
 const Image = styled.img `
-  height: 60%;
+  height: 50%;
 `
 const Info = styled.div `
-  width: 22%;
+  width: 336px;
   position: absolute;
   justify-content: center;
   align-content: center;
@@ -52,7 +46,6 @@ const Icon = styled.div `
 function Product({item}) {
   return (
     <Container>
-      <Circle />
       <Image src={item.img} />
       <Info>
         <Icon>
