@@ -23,12 +23,14 @@ const Language = styled.span`
 const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
-  align-item: center;
+  height: 30px;
+  align-items: center;
   margin-left: 25px;
   padding: 5px;
   `  
 const Input = styled.input`
 border: none;
+height: 100%;
 `
 
 const Center = styled.div`
@@ -36,7 +38,9 @@ const Center = styled.div`
   text-align: center;
 `
 const Logo = styled.h1`
+font-size: 40px;
   font-weight: bold;
+
 `
 const Right = styled.div`
   flex: 1;
@@ -57,7 +61,7 @@ function Navbar() {
         <Left>
           <Language>English</Language>
           <SearchContainer>
-            <Input/>
+            <Input placeholder='search' />
             <BsSearch size="1.3em" color='gray'/>
           </SearchContainer>
         </Left>

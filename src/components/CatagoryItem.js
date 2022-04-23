@@ -11,6 +11,7 @@ const Image = styled.img`
     width: 100%;
     height: 43.2%;
     object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
 `
 const Info = styled.div`
 position: absolute;

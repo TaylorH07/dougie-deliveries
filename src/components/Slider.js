@@ -108,7 +108,7 @@ function Slider() {
             </InfoContainer>
             </Slide>
            {sliderItems.map((item)=> (
-           <Slide>
+           <Slide key={item.id}>
             <ImgContainer>
                 <Image3 src={item.img} />
                 <Image4 src={item.img2} />
