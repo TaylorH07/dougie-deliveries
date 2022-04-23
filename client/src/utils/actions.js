@@ -2,8 +2,10 @@ export const PRODUCT_UPDATE = "PRODUCT_UPDATE";
 
 export const ADD_ITEMS = "ADD_ITEMS";
 export const ADD_MULTIPLE_ITEMS = "ADD_MULTIPLE_ITEMS";
+
 export const REMOVE_ITEMS = "REMOVE_ITEMS";
 export const CLEAR_ALL_ITEMS = "CLEAR_ALL_ITEMS";
+
 export const CART_QUANTITY_UPDATE = "CART_QUANTITY_UPDATE";
 export const CART_TOGGLE = "CART_TOGGLE";
 
