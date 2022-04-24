@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 `
 const Title = styled.h1`
     font-size: 24px;
-    font-size: 600;
+    font-weight: 800;
 `
 const Form = styled.div`
     display: flex;
@@ -54,7 +54,7 @@ function Login() {
   return (
     <Container>
         <Wrapper>
-            <Title>Create an Account</Title>
+            <Title>Create an Account  🐕‍🦺 </Title>
             <Form>
                 <Input placeholder="username" />
                 <Input placeholder ="password" />
