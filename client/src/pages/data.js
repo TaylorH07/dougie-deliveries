@@ -1,12 +1,12 @@
-import catSnackImg from '../images/Catsnacks.jpeg'
-import bunnyImg from '../images/bunny.jpeg'
-import dogEating from '../images/Dogeating.jpeg'
-import catPlaying from '../images/Catplaying.jpeg'
-import Animals from '../images/HealthCatDog.jpeg'
-import dogToy1 from '../images/DogToy1.jpeg'
-import catToy2 from '../images/Cattoy2.jpeg'
-import dogToy3 from '../images/dogToy 3.webp'
-import catToy3 from '../images/cattoy3.webp'
+import catSnackImg from '../assets/images/Catsnacks.jpeg'
+import bunnyImg from '../assets/images/bunny.jpeg'
+import dogEating from '../assets/images/Dogeating.jpeg'
+import catPlaying from '../assets/images/Catplaying.jpeg'
+import Animals from '../assets/images/HealthCatDog.jpeg'
+import dogToy1 from '../assets/images/DogToy1.jpeg'
+import catToy2 from '../assets/images/Cattoy2.jpeg'
+import dogToy3 from '../assets/images/dogToy 3.webp'
+import catToy3 from '../assets/images/cattoy3.webp'
 
 
 export const sliderItems = [

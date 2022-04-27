@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import {HiOutlineArrowCircleLeft, HiOutlineArrowCircleRight} from 'react-icons/hi'
-import LazyDog from '../images/lazy pug.jpeg'
-import Spainal from '../images/Spainal.jpeg'
+import LazyDog from '../assets/images/lazy pug.jpeg'
+import Spainal from '../assets/images/Spainal.jpeg'
 import { sliderItems } from '../pages/data'
 
 

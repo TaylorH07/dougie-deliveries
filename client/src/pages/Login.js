@@ -18,7 +18,7 @@ const Wrapper = styled.div`
     padding: 20px;
     background-color: white;
 `
-const Title = styled.h1`
+const span = styled.h1`
     font-size: 24px;
     font-weight: 800;
 `
@@ -54,7 +54,7 @@ function Login() {
   return (
     <Container>
         <Wrapper>
-            <Title>Create an Account  🐕‍🦺 </Title>
+            <span role="img"  aria-label="dog">Create an Account  🐕‍🦺 </span>
             <Form>
                 <Input placeholder="username" />
                 <Input placeholder ="password" />
