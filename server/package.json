@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "apollo-server-express": "^2.11.0",
     "bcrypt": "^4.0.1",
     "express": "^4.17.1",
