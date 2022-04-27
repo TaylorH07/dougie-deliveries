@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "deliveries-server",
   "version": "0.1.0",
+=======
+  "name": "ddeliveries-server",
+  "version": "1.0.0",
+>>>>>>> a12c3c833901f7fa344641fcca396bbcf24d1870
   "description": "",
   "main": "server.js",
   "scripts": {
