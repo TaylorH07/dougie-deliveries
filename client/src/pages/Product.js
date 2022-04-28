@@ -8,6 +8,8 @@ import catToy1 from '../assets/images/CatToy1.jpeg'
 import {GrFormSubtract} from 'react-icons/gr'
 import {HiPlus} from 'react-icons/hi'
 
+
+
 const Container = styled.div`
 
 `
