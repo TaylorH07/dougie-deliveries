@@ -4,9 +4,11 @@ import Announcement from '../components/Announcement'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Newsletter from '../components/Newsletter'
-import catToy1 from '../images/CatToy1.jpeg'
+import catToy1 from '../assets/images/CatToy1.jpeg'
 import {GrFormSubtract} from 'react-icons/gr'
 import {HiPlus} from 'react-icons/hi'
+
+
 
 const Container = styled.div`
 

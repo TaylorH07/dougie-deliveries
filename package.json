@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "dougie-deliveries",
   "version": "0.1.0",
   "private": true,
@@ -16,28 +17,27 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
+=======
+  "name": "ddeliveries-shopping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+>>>>>>> 367d8fbf327a3c371da8303e4be4e1a8904b3d34
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "stripe": "^8.217.0"
   }
 }
