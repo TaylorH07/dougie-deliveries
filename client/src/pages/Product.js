@@ -1,12 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
-import Announcement from '../components/Announcement'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import Newsletter from '../components/Newsletter'
-import catToy1 from '../assets/images/CatToy1.jpeg'
-import {GrFormSubtract} from 'react-icons/gr'
-import {HiPlus} from 'react-icons/hi'
+import {React, useState, useEffect}  from 'react';
+import styled from 'styled-components';
+import Announcement from '../components/Announcement';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import Newsletter from '../components/Newsletter';
+import catToy1 from '../assets/images/CatToy1.jpeg';
+import {GrFormSubtract} from 'react-icons/gr';
+import {HiPlus} from 'react-icons/hi';
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -76,6 +77,18 @@ const Button = styled.button`
 `
 
 function Product() {
+
+    const location = useLocation();
+    const cat = location.pathname.split("/")[2];
+    const [product, setProduct] = useState({});
+
+    useEffect(() = {
+        const getProduct = async () => {
+            try{
+                const res = axios.
+            }catch{}
+        }
+    })
   return (
     <Container>
         <Navbar/>
