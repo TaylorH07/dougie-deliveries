@@ -1,5 +1,6 @@
-import React from 'react'
+import {React, useState} from 'react'
 import styled from 'styled-components'
+import {login} from '../redux'
 
 const Container = styled.div`
     width: 100vw;
@@ -49,8 +50,22 @@ const Link = styled.a`
     cursor: pointer;
     color: gray;
 `
+const Error = styled.span`
+    color: red`
 
 function Login() {
+
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const dispatch = useDispatch();
+    const { isFetching, error } = useSelector((state) => state.user);
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        login(dispatch, { username, password });
+    };
+
+
   return (
     <Container>
         <Wrapper>
