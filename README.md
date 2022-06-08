@@ -33,6 +33,14 @@ We are building a online shopping experince for pet needs the user will be able 
 * All users to add items to cart for purchase
 * Be able to make purchase using the online payment system
 
+![Screen Shot 2022-06-08 at 2 31 02 PM](https://user-images.githubusercontent.com/92659821/172701679-7b7c0178-3656-4d27-82a1-aed8a1e358ad.png)
+
+![Screen Shot 2022-06-08 at 2 30 39 PM](https://user-images.githubusercontent.com/92659821/172701625-e93cef17-d7a0-4de0-9801-083efe6200dc.png)
+
+![Screen Shot 2022-06-08 at 2 30 25 PM](https://user-images.githubusercontent.com/92659821/172701565-c7c1cc2c-6e51-4704-a3f8-4cc1ed26a142.png)
+
+![Screen Shot 2022-06-08 at 2 29 41 PM](https://user-images.githubusercontent.com/92659821/172701468-e5e29b55-9d2d-4935-a42d-8c1a77b56372.png)
+
 ## Languages
 HTML, CSS, JavaScript, ES6, Node, Bootstrap, React, GraphQL, Mongo DB
 ## Installation
